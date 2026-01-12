@@ -1,0 +1,44 @@
+body { background: transparent !important; overflow: hidden; color: white; font-family: 'Arial', sans-serif; }
+
+#car-hud {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+}
+
+#speed, #gear, #street-label, .label, small {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+#street-label {
+    position: absolute;
+    left: -330px; 
+    bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.hud-main-wrapper { display: flex; align-items: flex-end; justify-content: center; gap: 50px; }
+
+.speed-container { position: absolute; top: -40px; left: 50%; transform: translateX(-50%); text-align: center; }
+#speed { font-family: 'Seven Segment', sans-serif; font-size: 55px; line-height: 1; }
+
+.gear-box { position: absolute; right: -35px; bottom: 35px; text-align: center; }
+#gear { font-size: 30px; font-weight: 900; color: #ff3e3e; text-shadow: 0 0 10px rgba(255, 62, 62, 0.8); }
+
+.center-gauge { position: relative; width: 260px; }
+svg { fill: none; stroke-width: 8; stroke-linecap: round; }
+.rpm-bg { stroke: rgba(255,255,255,0.1); }
+#rpm-fill { stroke: #fff; stroke-dasharray: 240; stroke-dashoffset: 240; transition: 0.1s linear; }
+
+.bar-container { width: 6px; height: 90px; background: rgba(0, 0, 0, 0.4); border-radius: 5px; overflow: hidden; position: relative; }
+.fill { width: 100%; position: absolute; bottom: 0; background: #fff; box-shadow: 0 0 10px white; }
+
+.status-svg { width: 22px; height: 22px; color: white; opacity: 0.2; margin-top: 10px; }
+.active-white { opacity: 1; color: #fff; filter: drop-shadow(0 0 8px white); }
+.active-red { opacity: 1; color: #ff3e3e; filter: drop-shadow(0 0 8px #ff3e3e); }
+.label { font-size: 10px; font-weight: bold; margin-top: 5px; }

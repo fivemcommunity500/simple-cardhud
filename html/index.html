@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">
+</head>
+<body>
+    <div id="car-hud" style="display: none;">
+        <div id="street-label">LOADING...</div>
+
+        <div class="hud-main-wrapper">
+            <div class="side-bar">
+                <div class="bar-container"><div id="fuel-bar" class="fill"></div></div>
+                <span class="label" id="lbl-fuel">FUEL</span>
+            </div>
+
+            <div class="center-gauge">
+                <div class="speed-container">
+                    <span id="speed">0</span>
+                    <small>KM/H</small>
+                </div>
+                <svg viewBox="0 0 200 120">
+                    <path class="rpm-bg" d="M25,110 A75,75 0 0,1 175,110" />
+                    <path id="rpm-fill" d="M25,110 A75,75 0 0,1 175,110" />
+                </svg>
+                <div class="gear-box">
+                    <span id="gear">N</span>
+                    <small id="lbl-gear">GEAR</small>
+                </div>
+            </div>
+
+            <div class="side-bar">
+                <div class="bar-container"><div id="eng-bar" class="fill red-grad"></div></div>
+                <span class="label" id="lbl-eng">ENG</span>
+                <div class="alert-icons">
+                    <div id="belt-icon" class="status-svg">
+                        <svg viewBox="0 0 448 512"><path fill="currentColor" d="M272 160V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v96h64zM192 160h-64v224c0 17.7 14.3 32 32 32s32-14.3 32-32V160zm192 0h-64v224c0 17.7 14.3 32 32 32s32-14.3 32-32V160z"/></svg>
+                    </div>
+                    <div id="light-icon" class="status-svg">
+                        <svg viewBox="0 0 512 512"><path fill="currentColor" d="M144 208C144 93.1 237.1 0 352 0C405 0 453.3 19.8 490.1 52.1C498.2 59.2 499 71.7 491.9 79.9C484.8 488.1 472.3 488.9 464.1 481.9C427.3 449.6 379 429.8 326.1 429.8C211.2 429.8 118.1 522.9 118.1 637.8"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
