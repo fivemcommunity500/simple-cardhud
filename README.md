@@ -63,3 +63,8 @@ For more scripts and updates, join our community!
 Para más scripts y actualizaciones, ¡únete a nuestra comunidad!
 
 🎮 Discord: https://discord.gg/2W9PMsYWTZ
+
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e1fa2ee8-7086-466e-940a-d7fab84e94b6" alt="carhud" width="800">
+</p>
